@@ -1,0 +1,15 @@
+{
+  "name": "color-draw-guess",
+  "version": "1.0.0",
+  "description": "A multiplayer drawing and guessing game using Socket.io.",
+  "main": "server/server.js",
+  "scripts": {
+    "start": "node server/server.js"
+  },
+  "dependencies": {
+    "express": "^4.17.1",
+    "socket.io": "^4.0.0"
+  },
+  "author": "",
+  "license": "ISC"
+}

@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Color Draw Guess</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="main-container">
+    <div class="game-card">
+      <h2>Color Draw Guess</h2>
+      <div class="score-timer">
+        <span id="score">Score: 0</span>
+        <span id="timer">Time: 60s</span>
+      </div>
+      <div class="draw-word">
+        <b>Draw this:</b> <span id="drawWord">-</span>
+      </div>
+      <canvas id="canvas" width="400" height="300"></canvas>
+      <div class="palette" id="palette"></div>
+      <div class="button-row">
+        <button id="startBtn">Start</button>
+        <button id="stopBtn">Stop</button>
+        <button id="resetBtn">Reset</button>
+        <button id="clearBtn">Clear</button>
+      </div>
+      <form id="guessForm">
+        <input id="guessInput" autocomplete="off" placeholder="Guess the word..." />
+        <button type="submit">Guess</button>
+      </form>
+      <div id="message"></div>
+    </div>
+    <div class="sidebar">
+      <h3>How to Play</h3>
+      <p>Draw the given word using only the color palette. Try to guess the word before time runs out!</p>
+      <hr>
+      <h4>Game Rules</h4>
+      <ul>
+        <li>Draw the word shown above.</li>
+        <li>Type your guess and submit.</li>
+        <li>+10 points for correct guess, -5 for wrong guess.</li>
+        <li>Timer is 60 seconds per round.</li>
+        <li>Click <b>Clear</b> to erase the canvas.</li>
+      </ul>
+      <hr>
+      <h4>Color Palette</h4>
+      <div class="color-guide">
+        <span class="color-dot" style="background:#e74c3c"></span> Red
+        <span class="color-dot" style="background:#27ae60"></span> Green
+        <span class="color-dot" style="background:#3498db"></span> Blue
+        <span class="color-dot" style="background:#f1c40f"></span> Yellow
+        <span class="color-dot" style="background:#9b59b6"></span> Purple
+        <span class="color-dot" style="background:#000"></span> Black
+        <span class="color-dot" style="background:#fff; border:1px solid #ccc"></span> Eraser
+      </div>
+      <hr>
+      <h4>Controls</h4>
+      <ul>
+        <li><b>Start</b>: Begin the round</li>
+        <li><b>Stop</b>: Pause the timer</li>
+        <li><b>Reset</b>: New word, reset score</li>
+        <li><b>Clear</b>: Erase drawing</li>
+      </ul>
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
