@@ -1,19 +1,37 @@
-🎨 Color Draw Guess – Multiplayer Drawing & Guessing Game
+# 🎨 Color Draw Guess – Multiplayer Drawing & Guessing Game
 
-A fast-paced, interactive web game where players draw a given word using a color palette while others guess it in real-time. Inspired by Pictionary, built with HTML, CSS, JavaScript, and Socket.io for multiplayer support.
+An interactive web-based drawing and guessing game, inspired by Pictionary. Built using **HTML**, **CSS**, **JavaScript**, and **Socket.io** for real-time multiplayer functionality. Great for practicing canvas drawing, game logic, and WebSocket integration.
 
-🔹 Key Highlights:
+---
 
-🎮 Real-time multiplayer using Socket.io
+## ✨ Features
 
-🖌️ Canvas-based drawing with dynamic color palette
+- 🖌️ Canvas drawing with color palette and eraser
+- ⏱️ 60-second timer per round with scoring system
+- 🎯 Word prompt generator
+- 🎮 Real-time multiplayer with **Socket.io**
+- 💬 Guess validation with visual feedback
+- 🔧 Local single-player support as well
 
-⏱️ Countdown timer & scoring system
+---
 
-💡 Intuitive UI with responsive design
+## 🧰 Tech Stack
 
-🌐 Node.js + Express backend serving static files
+| Technology   | Usage                        |
+|--------------|------------------------------|
+| HTML5        | Game structure               |
+| CSS3         | UI design & layout           |
+| JavaScript   | Game logic & drawing         |
+| Node.js      | Server runtime               |
+| Express.js   | Static file server           |
+| Socket.io    | Real-time multiplayer engine |
 
-🧰 Tech Stack:
+---
 
-HTML, CSS, JavaScript, Node.js, Express, Socket.io
+## 🚀 Getting Started
+
+### 📁 Clone the Repository
+
+```bash
+git clone https://github.com/yourusername/color-draw-guess.git
+cd color-draw-guess
